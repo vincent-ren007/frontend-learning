@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+        }
+        .parent{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+        .header, .footer{
+            background-color: #ccc;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .content{
+            display: flex;
+            flex-grow: 1;
+        }
+        .content div{
+            //flex-grow: 1;
+            padding: 20px;
+        }
+        .content .nav{
+            background-color: #a1a1a1;
+            width: 100px;
+        }
+        .content .main{
+            flex-grow: 1;
+            background-color: #a2b2c9;
+        }
+        .content .beside{
+            background-color: blue;
+            width: 100px;
+            //flex-grow: 1;
+        }
+
+        @media(max-width: 600px){
+            .content{
+                flex-direction: column;
+            }
+            .content .nav, .content .beside{
+                width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="header">header</div>
+        <div class="content">
+            <div class="nav">nav</div>
+            <div class="main">main</div>
+            <div class="beside">beside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,185 @@
+/* common */
+* {
+    margin:0;
+    box-sizing: border-box;
+}
+
+.clearfix:after,
+.clearfix:before {
+   content:"";
+   display: table;
+   clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* banner */
+#banner {
+    background: url("pic/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 15%;
+    width:100%;
+    height:400px;
+    text-align: center;
+}
+
+#banner .tagline{
+    margin-top: 90px;
+    font-weight: normal;
+}
+/* welcome */
+.welcome #header {
+    //background: red;
+}
+.article-list {
+    width: 960px;
+    background: #ccc;
+    margin:0 auto;
+    margin-top: 20px;
+
+}
+
+.article-list .post {
+    width: 180px;
+    //height: 300px;
+    margin: 10px 0 0 10px;
+    background: #ADC6EE;
+    float: left;
+    border-radius: 5px;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, .1);
+}
+
+.article-list .post a {
+    display: block;
+    position: relative;
+}
+
+.article-list .post a:before {
+    display: block;
+    content: '';
+    background: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    opacity: 0;
+    transition: opacity 1s;
+
+}
+.article-list .post a:hover:before {
+    opacity: 0.6;
+}
+
+.article-list .post img{
+    width: 180px;
+    display: block;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.article-list .post h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* header */
+
+#header {
+    position: fixed;  
+    top:0;
+    left:0;
+    height: 50px;
+    width: 100%;
+    background: #627DAB;
+}
+
+#header ul{
+   margin: 0;
+   padding:0;
+   margin-right: 30px;
+   float: right;
+}
+
+#header ul li{
+   list-style: none; 
+   float: left;
+   line-height: 50px;
+}
+
+#header ul li a{
+    margin-right: 20px;
+    padding: 8px 5px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+#header ul li a:hover{
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+#header ul li.current a {
+    background: rgba(255, 255, 255, .2);
+    border: 1px solid transparent;
+}
+
+
+#header .logo {
+    position: fixed;
+    display: block;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: 20px;
+    background: #FEAA0D;
+    border-radius: 50%; 
+    line-height: 60px;
+    text-align: center;
+    font-weight: 100;
+}
+
+#header .logo a {
+    display: block;
+    font-weight: 200;
+    //background-image: url("pic/v.jpg");
+    //background-attachment: fixed;
+}
+
+/* post */
+
+body {
+    font: 17px/1.7 Arial, "Microsoft Yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#article {
+    width:960px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background: #ccc;
+}
+
+.title {
+    text-align: center;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+#article p {
+    padding:10px 40px;
+}
+
+#article img {
+    max-width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: none;
+}
